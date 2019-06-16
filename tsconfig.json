@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "noImplicitAny": false,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2017",
+    "lib": [
+      "esnext",
+      "esnext.asynciterable",
+    ],
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"],
+    },
+    "types": [
+      "@types/node",
+    ],
+    "plugins": [
+      { "transform": "ts-optchain/transform" },
+    ],
+  },
+  "include": [
+    "**/*.ts",
+  ]
+}
