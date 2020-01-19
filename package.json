@@ -1,31 +1,54 @@
 {
   "name": "ts-node-starter",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "ts-node ./index.ts",
-    "dev": "nodemon -w . --exec 'ts-node' ./index.ts"
+    "dev": "rollup -c --watch",
+    "build": "npm run typings && rollup -c",
+    "typings": "tsc --emitDeclarationOnly",
+    "publish:ci": "npm run build && npm publish --access public",
+    "release": "bump --commit --push --tag && npm run publish:ci",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "jest"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "files": [
+    "dist"
+  ],
   "keywords": [],
-  "author": "",
+  "author": "Anthony Fu<anthonyfu117@hotmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "ts-node": "^8.3.0",
-    "typescript": "^3.5.2",
-    "ts-optchain": "^0.1.7"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^1.10.2",
-    "@typescript-eslint/parser": "^1.10.2",
-    "eslint": "^5.16.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-loader": "^2.1.2",
-    "eslint-plugin-import": "^2.17.3",
-    "eslint-plugin-node": "^9.1.0",
-    "eslint-plugin-promise": "^4.1.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "nodemon": "^1.19.1",
-    "rimraf": "^2.6.3"
+    "@antfu/eslint-config-ts": "0.2.10",
+    "@rollup/plugin-json": "4.0.1",
+    "@rollup/plugin-typescript": "2.1.0",
+    "@types/jest": "24.9.0",
+    "@types/node": "13.1.8",
+    "eslint": "6.8.0",
+    "eslint-plugin-jest": "23.6.0",
+    "husky": "4.0.10",
+    "jest": "^24.9.0",
+    "lint-staged": "9.5.0",
+    "nodemon": "2.0.2",
+    "rimraf": "3.0.0",
+    "rollup": "1.29.0",
+    "rollup-plugin-dts": "1.2.0",
+    "rollup-plugin-uglify": "6.0.4",
+    "ts-jest": "24.3.0",
+    "ts-node": "8.6.2",
+    "typescript": "3.7.5"
   }
 }

@@ -1,32 +1,33 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "esModuleInterop": true,
-    "experimentalDecorators": true,
+    "target": "es5",
     "module": "commonjs",
     "moduleResolution": "node",
-    "noEmit": true,
-    "noImplicitAny": false,
-    "resolveJsonModule": true,
-    "sourceMap": true,
-    "strict": true,
-    "target": "es2017",
     "lib": [
       "esnext",
       "esnext.asynciterable",
+      "dom",
+      "dom.iterable"
     ],
-    "paths": {
-      "~/*": ["./*"],
-      "@/*": ["./*"],
-    },
+    "esModuleInterop": true,
+    "strict": true,
+    "declaration": true,
+    "resolveJsonModule": true,
+    "declarationDir": "./typings",
     "types": [
       "@types/node",
-    ],
-    "plugins": [
-      { "transform": "ts-optchain/transform" },
-    ],
+      "@types/jest"
+    ]
   },
   "include": [
-    "**/*.ts",
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/**/*.test.ts",
+    "**/**/*.md",
+    "test",
+    "typings",
+    "dist"
   ]
 }
