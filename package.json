@@ -41,7 +41,7 @@
     "eslint-plugin-jest": "23.6.0",
     "husky": "4.0.10",
     "jest": "^24.9.0",
-    "lint-staged": "9.5.0",
+    "lint-staged": "10.0.0",
     "nodemon": "2.0.2",
     "rimraf": "3.0.0",
     "rollup": "1.29.0",
