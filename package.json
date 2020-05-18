@@ -40,7 +40,7 @@
     "eslint": "7.0.0",
     "eslint-plugin-jest": "23.13.1",
     "husky": "4.2.5",
-    "jest": "^25.0.0",
+    "jest": "^26.0.0",
     "lint-staged": "10.2.2",
     "nodemon": "2.0.4",
     "rimraf": "3.0.2",
