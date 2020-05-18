@@ -35,20 +35,20 @@
     "@antfu/eslint-config-ts": "0.2.11",
     "@rollup/plugin-json": "4.0.3",
     "@rollup/plugin-typescript": "4.1.1",
-    "@types/jest": "25.2.1",
+    "@types/jest": "25.2.2",
     "@types/node": "13.13.5",
     "eslint": "7.0.0",
-    "eslint-plugin-jest": "23.10.0",
+    "eslint-plugin-jest": "23.13.1",
     "husky": "4.2.5",
     "jest": "^25.0.0",
     "lint-staged": "10.2.2",
-    "nodemon": "2.0.3",
+    "nodemon": "2.0.4",
     "rimraf": "3.0.2",
-    "rollup": "2.9.0",
-    "rollup-plugin-dts": "1.4.2",
+    "rollup": "2.10.2",
+    "rollup-plugin-dts": "1.4.6",
     "rollup-plugin-uglify": "6.0.4",
     "ts-jest": "25.5.1",
     "ts-node": "8.10.1",
-    "typescript": "3.8.3"
+    "typescript": "3.9.2"
   }
 }
