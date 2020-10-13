@@ -1,15 +1,29 @@
 {
-  "name": "ts-node-starter",
-  "version": "0.0.1",
+  "name": "@antfu/ts-starter",
+  "version": "0.0.0",
   "description": "",
   "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "license": "MIT",
+  "sideEffects": false,
+  "bugs": {
+    "url": "https://github.com/<placeholder>/issues"
+  },
+  "homepage": "https://github.com/<placeholder>#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/<placeholder>.git"
+  },
   "scripts": {
-    "dev": "rollup -c --watch",
-    "build": "npm run typings && rollup -c",
-    "typings": "tsc --emitDeclarationOnly",
-    "publish:ci": "npm run build && npm publish --access public",
-    "release": "bump --commit --push --tag && npm run publish:ci",
-    "lint": "eslint src/**/*.ts",
+    "prepare": "npm run build",
+    "watch": "npm run build -- --watch",
+    "dev": "esno src/index.ts",
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "publish:ci": "npm publish --access public",
+    "release": "npx bumpp --commit --push --tag && npm run publish:ci",
+    "lint": "eslint \"{src,test}/**/*.ts\"",
     "lint:fix": "npm run lint -- --fix",
     "test": "jest"
   },
@@ -27,28 +41,19 @@
   "files": [
     "dist"
   ],
-  "keywords": [],
-  "author": "Anthony Fu<anthonyfu117@hotmail.com>",
-  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "@antfu/eslint-config-ts": "0.3.3",
-    "@rollup/plugin-json": "4.1.0",
-    "@rollup/plugin-typescript": "6.0.0",
-    "@types/jest": "26.0.14",
-    "@types/node": "13.13.5",
-    "eslint": "7.11.0",
-    "eslint-plugin-jest": "24.1.0",
-    "husky": "4.3.0",
-    "jest": "^26.0.0",
-    "lint-staged": "10.4.0",
-    "nodemon": "2.0.4",
-    "rimraf": "3.0.2",
-    "rollup": "2.29.0",
-    "rollup-plugin-dts": "1.4.13",
-    "rollup-plugin-uglify": "6.0.4",
-    "ts-jest": "26.4.1",
-    "ts-node": "9.0.0",
-    "typescript": "4.0.3"
+    "@antfu/eslint-config-ts": "^0.3.3",
+    "@types/jest": "^26.0.14",
+    "@types/node": "^14.11.8",
+    "eslint": "^7.11.0",
+    "eslint-plugin-jest": "^24.1.0",
+    "esno": "^0.2.0",
+    "husky": "^4.3.0",
+    "jest": "^26.5.3",
+    "lint-staged": "^10.4.0",
+    "ts-jest": "^26.4.1",
+    "tsup": "^3.7.0",
+    "typescript": "^4.0.3"
   }
 }

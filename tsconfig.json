@@ -1,33 +1,12 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
+    "target": "es2017",
+    "module": "esnext",
+    "lib": ["esnext"],
     "moduleResolution": "node",
-    "lib": [
-      "esnext",
-      "esnext.asynciterable",
-      "dom",
-      "dom.iterable"
-    ],
     "esModuleInterop": true,
     "strict": true,
-    "declaration": true,
-    "resolveJsonModule": true,
-    "declarationDir": "./typings",
-    "types": [
-      "@types/node",
-      "@types/jest"
-    ]
-  },
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "node_modules",
-    "**/**/*.test.ts",
-    "**/**/*.md",
-    "test",
-    "typings",
-    "dist"
-  ]
+    "strictNullChecks": true,
+    "resolveJsonModule": true
+  }
 }
