@@ -17,7 +17,7 @@
     "url": "git+https://github.com/<placeholder>.git"
   },
   "scripts": {
-    "prepare": "npm run build",
+    "prepublishOnly": "npm run build",
     "watch": "npm run build -- --watch",
     "dev": "esno src/index.ts",
     "build": "tsup src/index.ts --format cjs,esm --dts",
@@ -43,17 +43,17 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "@antfu/eslint-config-ts": "^0.3.3",
-    "@types/jest": "^26.0.14",
-    "@types/node": "^14.11.8",
-    "eslint": "^7.11.0",
+    "@antfu/eslint-config-ts": "^0.4.3",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^14.14.6",
+    "eslint": "^7.12.1",
     "eslint-plugin-jest": "^24.1.0",
-    "esno": "^0.2.0",
+    "esno": "^0.2.4",
     "husky": "^4.3.0",
-    "jest": "^26.5.3",
-    "lint-staged": "^10.4.0",
-    "ts-jest": "^26.4.1",
-    "tsup": "^3.7.0",
-    "typescript": "^4.0.3"
+    "jest": "^26.6.3",
+    "lint-staged": "^10.5.1",
+    "ts-jest": "^26.4.3",
+    "tsup": "^3.7.1",
+    "typescript": "^4.0.5"
   }
 }
