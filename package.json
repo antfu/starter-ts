@@ -1,59 +1,49 @@
 {
-  "name": "@antfu/ts-starter",
+  "name": "[name]",
   "version": "0.0.0",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "funding": "https://github.com/sponsors/antfu",
   "author": "Anthony Fu <anthonyfu117@hotmail.com>",
   "license": "MIT",
   "sideEffects": false,
   "bugs": {
-    "url": "https://github.com/<placeholder>/issues"
+    "url": "https://github.com/antfu/[name]/issues"
   },
-  "homepage": "https://github.com/<placeholder>#readme",
+  "homepage": "https://github.com/antfu/[name]#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/<placeholder>.git"
+    "url": "git+https://github.com/antfu/[name].git"
   },
+  "keywords": [],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prepublishOnly": "npm run build",
     "watch": "npm run build -- --watch",
     "dev": "esno src/index.ts",
     "build": "tsup src/index.ts --format cjs,esm --dts",
-    "publish:ci": "npm publish --access public",
-    "release": "npx bumpp --commit --push --tag && npm run publish:ci",
+    "release": "git-ensure -a && bumpp --commit --push --tag",
     "lint": "eslint \"{src,test}/**/*.ts\"",
     "lint:fix": "npm run lint -- --fix",
     "test": "jest"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{ts,js}": [
-      "eslint --fix",
-      "git add"
-    ]
-  },
-  "files": [
-    "dist"
-  ],
-  "dependencies": {},
   "devDependencies": {
-    "@antfu/eslint-config-ts": "^0.4.3",
-    "@types/jest": "^26.0.15",
-    "@types/node": "^14.14.6",
-    "eslint": "^7.12.1",
-    "eslint-plugin-jest": "^24.1.0",
-    "esno": "^0.2.4",
-    "husky": "^4.3.0",
+    "@antfu/eslint-config": "^0.4.3",
+    "@antfu/ni": "^0.5.4",
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.28",
+    "bumpp": "^6.0.6",
+    "eslint": "^7.20.0",
+    "eslint-plugin-jest": "^24.1.5",
+    "esno": "^0.4.3",
+    "git-ensure": "^0.0.4",
     "jest": "^26.6.3",
-    "lint-staged": "^10.5.1",
-    "ts-jest": "^26.4.3",
-    "tsup": "^3.7.1",
-    "typescript": "^4.0.5"
+    "ts-jest": "^26.5.1",
+    "tsup": "^4.0.0",
+    "typescript": "^4.1.5"
   }
 }
