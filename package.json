@@ -23,8 +23,8 @@
   ],
   "scripts": {
     "prepublishOnly": "npm run build",
-    "watch": "npm run build -- --watch",
-    "dev": "esno src/index.ts",
+    "dev": "npm run build -- --watch",
+    "start": "esno src/index.ts",
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "release": "git-ensure -a && bumpp --commit --push --tag",
     "lint": "eslint \"{src,test}/**/*.ts\"",
@@ -32,18 +32,18 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.4.3",
-    "@antfu/ni": "^0.5.4",
-    "@types/jest": "^26.0.20",
-    "@types/node": "^14.14.28",
+    "@antfu/eslint-config": "^0.6.2",
+    "@antfu/ni": "^0.5.5",
+    "@types/jest": "^26.0.22",
+    "@types/node": "^14.14.37",
     "bumpp": "^6.0.6",
-    "eslint": "^7.20.0",
-    "eslint-plugin-jest": "^24.1.5",
-    "esno": "^0.4.3",
-    "git-ensure": "^0.0.4",
+    "eslint": "^7.23.0",
+    "eslint-plugin-jest": "^24.3.2",
+    "esno": "^0.5.0",
+    "git-ensure": "^0.1.0",
     "jest": "^26.6.3",
-    "ts-jest": "^26.5.1",
-    "tsup": "^4.0.0",
-    "typescript": "^4.1.5"
+    "ts-jest": "^26.5.4",
+    "tsup": "^4.8.21",
+    "typescript": "^4.2.3"
   }
 }
