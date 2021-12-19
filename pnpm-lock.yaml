@@ -13,7 +13,7 @@ importers:
       typescript: ^4.5.4
       unbuild: ^0.6.7
       vite: ^2.7.3
-      vitest: ^0.0.97
+      vitest: ^0.0.98
     devDependencies:
       '@antfu/eslint-config': 0.14.0_eslint@8.5.0+typescript@4.5.4
       '@antfu/ni': 0.12.0
@@ -24,7 +24,7 @@ importers:
       typescript: 4.5.4
       unbuild: 0.6.7
       vite: 2.7.3
-      vitest: 0.0.97_vite@2.7.3
+      vitest: 0.0.98_vite@2.7.3
 
 packages:
 
@@ -3140,8 +3140,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.0.97_vite@2.7.3:
-    resolution: {integrity: sha512-8gFvjcqBhI78gB5tCEQShQTfmi9R8B4zn+HkOVw2h4e1ojv8fMLBjGCBG0J/RiNdaBXCWcwUy+INgFz3eNNbkA==}
+  /vitest/0.0.98_vite@2.7.3:
+    resolution: {integrity: sha512-PK4W/MlOU/oXPufk1AXoV31Pim+t5fjTVIiioHy4EbUxQumBAEJuJNPj3T87fOZ9DAE9k1tMYENEdvev4kbr4w==}
     engines: {node: '>=16.0.0'}
     hasBin: true
     peerDependencies:
