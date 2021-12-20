@@ -13,7 +13,7 @@ importers:
       typescript: ^4.5.4
       unbuild: ^0.6.7
       vite: ^2.7.3
-      vitest: ^0.0.98
+      vitest: ^0.0.101
     devDependencies:
       '@antfu/eslint-config': 0.14.0_eslint@8.5.0+typescript@4.5.4
       '@antfu/ni': 0.12.0
@@ -24,7 +24,7 @@ importers:
       typescript: 4.5.4
       unbuild: 0.6.7
       vite: 2.7.3
-      vitest: 0.0.98_vite@2.7.3
+      vitest: 0.0.101_vite@2.7.3
 
 packages:
 
@@ -747,11 +747,6 @@ packages:
   /callsites/3.1.0:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
     engines: {node: '>=6'}
-    dev: true
-
-  /chai-subset/1.6.0:
-    resolution: {integrity: sha1-pdDKFOMpp5WW7XAFi2ZGvWmIz+k=}
-    engines: {node: '>=4'}
     dev: true
 
   /chai/4.3.4:
@@ -1768,17 +1763,6 @@ packages:
       merge2: 1.4.1
       micromatch: 4.0.4
       picomatch: 2.3.0
-    dev: true
-
-  /fast-glob/3.2.7:
-    resolution: {integrity: sha512-rYGMRwip6lUMvYD3BTScMwT1HtAs2d71SMv66Vrxs0IekGZEjhM0pcMfjQPnknBt2zeCwQMEupiN02ZP4DiT1Q==}
-    engines: {node: '>=8'}
-    dependencies:
-      '@nodelib/fs.stat': 2.0.4
-      '@nodelib/fs.walk': 1.2.6
-      glob-parent: 5.1.2
-      merge2: 1.4.1
-      micromatch: 4.0.4
     dev: true
 
   /fast-json-stable-stringify/2.1.0:
@@ -2860,11 +2844,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /source-map/0.7.3:
-    resolution: {integrity: sha512-CkCj6giN3S+n9qrYiBTX5gystlENnRW5jZeNLHpe6aue+SrHcG5VYwujhW9s4dY31mEGsxBDrHR6oI69fTXsaQ==}
-    engines: {node: '>= 8'}
-    dev: true
-
   /sourcemap-codec/1.4.8:
     resolution: {integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==}
     dev: true
@@ -3140,9 +3119,9 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.0.98_vite@2.7.3:
-    resolution: {integrity: sha512-PK4W/MlOU/oXPufk1AXoV31Pim+t5fjTVIiioHy4EbUxQumBAEJuJNPj3T87fOZ9DAE9k1tMYENEdvev4kbr4w==}
-    engines: {node: '>=16.0.0'}
+  /vitest/0.0.101_vite@2.7.3:
+    resolution: {integrity: sha512-y5EMn1Y8/zbPXKMYdqYW4bh3QdLbtb0329jdU2xYNHNOsBOh0DalUByz/j+wUSvIt93iA3sTuT1grKQ/laG6eQ==}
+    engines: {node: '>=14.14.0'}
     hasBin: true
     peerDependencies:
       c8: '*'
@@ -3160,10 +3139,7 @@ packages:
       '@types/chai': 4.3.0
       '@types/chai-subset': 1.3.3
       chai: 4.3.4
-      chai-subset: 1.6.0
-      fast-glob: 3.2.7
       local-pkg: 0.4.0
-      source-map: 0.7.3
       tinypool: 0.0.3
       tinyspy: 0.1.2
       vite: 2.7.3
