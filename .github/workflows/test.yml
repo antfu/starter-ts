@@ -39,7 +39,7 @@ jobs:
       - name: Install
         run: nci
 
-      - name: Install
+      - name: Build
         run: nr build
 
       - name: Test
