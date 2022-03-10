@@ -10,6 +10,10 @@
   </a>
 </p>
 
+```ts
+const a = 1
+```
+
 ## License
 
 [MIT](./LICENSE) License © 2021 [Anthony Fu](https://github.com/antfu)
