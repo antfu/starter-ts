@@ -6,6 +6,7 @@ importers:
     specifiers:
       '@antfu/eslint-config': ^0.18.8
       '@antfu/ni': ^0.13.2
+      '@babel/types': ^7.17.0
       '@types/node': ^17.0.21
       bumpp: ^7.1.1
       eslint: ^8.11.0
@@ -19,6 +20,7 @@ importers:
     devDependencies:
       '@antfu/eslint-config': 0.18.8_eslint@8.11.0+typescript@4.6.2
       '@antfu/ni': 0.13.2
+      '@babel/types': 7.17.0
       '@types/node': 17.0.21
       bumpp: 7.1.1
       eslint: 8.11.0
@@ -146,6 +148,14 @@ packages:
       '@babel/helper-validator-identifier': 7.16.7
       chalk: 2.4.2
       js-tokens: 4.0.0
+    dev: true
+
+  /@babel/types/7.17.0:
+    resolution: {integrity: sha512-TmKSNO4D5rzhL5bjWFcVHHLETzfQ/AmbKpKPOSjlP0WoHZ6L911fgoOKY4Alp/emzG4cHJdyN49zpgkbXFEHHw==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      '@babel/helper-validator-identifier': 7.16.7
+      to-fast-properties: 2.0.0
     dev: true
 
   /@eslint/eslintrc/1.2.1:
@@ -3239,6 +3249,11 @@ packages:
   /tinyspy/0.3.0:
     resolution: {integrity: sha512-c5uFHqtUp74R2DJE3/Efg0mH5xicmgziaQXMm/LvuuZn3RdpADH32aEGDRyCzObXT1DNfwDMqRQ/Drh1MlO12g==}
     engines: {node: '>=14.0.0'}
+    dev: true
+
+  /to-fast-properties/2.0.0:
+    resolution: {integrity: sha1-3F5pjL0HkmW8c+A3doGk5Og/YW4=}
+    engines: {node: '>=4'}
     dev: true
 
   /to-regex-range/5.0.1:

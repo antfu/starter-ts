@@ -53,7 +53,7 @@ jobs:
       - name: Install
         run: nci
 
-      - name: Lint
+      - name: Typecheck
         run: nr typecheck
 
   test:
