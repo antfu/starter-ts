@@ -1,28 +1,35 @@
 {
   "name": "name",
   "version": "0.0.0",
-  "packageManager": "pnpm@6.32.3",
-  "description": "",
-  "keywords": [],
-  "homepage": "https://github.com/antfu/[name]#readme",
-  "bugs": {
-    "url": "https://github.com/antfu/[name]/issues"
-  },
   "license": "MIT",
   "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "funding": "https://github.com/sponsors/antfu",
+  "sideEffects": false,
+  "packageManager": "pnpm@6.32.6",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "",
+  "keywords": [],
+  "files": [
+    "dist"
+  ],
+  "bugs": "https://github.com/antfu/[name]/issues",
+  "homepage": "https://github.com/antfu/[name]#readme",
+  "readme": "https://github.com/antfu/[name]#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/antfu/[name].git"
   },
-  "funding": "https://github.com/sponsors/antfu",
+  "types": "./dist/index.d.ts",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs",
-      "types": "./dist/index.d.ts"
+      "import": "./dist/index.mjs"
     }
   },
   "typesVersions": {
@@ -33,10 +40,6 @@
       ]
     }
   },
-  "files": [
-    "dist"
-  ],
-  "sideEffects": false,
   "scripts": {
     "build": "rimraf dist && unbuild",
     "dev": "unbuild --stub",
