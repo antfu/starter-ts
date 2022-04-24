@@ -20,6 +20,6 @@ jobs:
           node-version: 16.x
           cache: pnpm
 
-      - run: npx conventional-github-releaser -p angular
+      - run: pnpx -y conventional-github-releaser -p angular
         env:
           CONVENTIONAL_GITHUB_RELEASER_TOKEN: ${{secrets.GITHUB_TOKEN}}
