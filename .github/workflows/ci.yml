@@ -57,10 +57,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Set node
+      - name: Set node ${{ matrix.node }}
         uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: ${{ matrix.node }}
 
       - name: Setup
         run: npm i -g @antfu/ni
