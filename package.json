@@ -48,18 +48,18 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.20.2",
+    "@antfu/eslint-config": "^0.21.1",
     "@antfu/ni": "^0.14.0",
     "@babel/types": "^7.17.0",
-    "@types/node": "^17.0.23",
+    "@types/node": "^17.0.29",
     "bumpp": "^7.1.1",
-    "eslint": "^8.13.0",
+    "eslint": "^8.14.0",
     "esno": "^0.14.1",
-    "pnpm": "^6.32.6",
+    "pnpm": "^6.32.11",
     "rimraf": "^3.0.2",
     "typescript": "^4.6.3",
-    "unbuild": "^0.7.2",
-    "vite": "^2.9.1",
-    "vitest": "^0.9.3"
+    "unbuild": "^0.7.4",
+    "vite": "^2.9.6",
+    "vitest": "^0.10.0"
   }
 }
