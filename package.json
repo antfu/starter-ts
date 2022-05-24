@@ -2,30 +2,29 @@
   "name": "pkg-name",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@7.0.0",
+  "packageManager": "pnpm@7.1.5",
   "description": "",
-  "keywords": [],
-  "homepage": "https://github.com/antfu/pkg-name#readme",
-  "bugs": {
-    "url": "https://github.com/antfu/pkg-name/issues"
-  },
-  "license": "MIT",
   "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/antfu",
+  "homepage": "https://github.com/antfu/pkg-name#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/antfu/pkg-name.git"
   },
-  "funding": "https://github.com/sponsors/antfu",
+  "bugs": "https://github.com/antfu/pkg-name/issues",
+  "keywords": [],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs",
-      "types": "./dist/index.d.ts"
-    }
-  },
   "typesVersions": {
     "*": {
       "*": [
@@ -37,7 +36,6 @@
   "files": [
     "dist"
   ],
-  "sideEffects": false,
   "scripts": {
     "build": "unbuild",
     "dev": "unbuild --stub",
@@ -49,18 +47,18 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.23.0",
+    "@antfu/eslint-config": "^0.24.2",
     "@antfu/ni": "^0.16.2",
     "@antfu/utils": "^0.5.2",
-    "@types/node": "^17.0.32",
+    "@types/node": "^17.0.35",
     "bumpp": "^7.1.1",
-    "eslint": "^8.15.0",
-    "esno": "^0.15.0",
-    "pnpm": "^7.0.1",
+    "eslint": "^8.16.0",
+    "esno": "^0.16.3",
+    "pnpm": "^7.1.5",
     "rimraf": "^3.0.2",
-    "typescript": "^4.6.4",
+    "typescript": "^4.7.2",
     "unbuild": "^0.7.4",
     "vite": "^2.9.9",
-    "vitest": "^0.12.4"
+    "vitest": "^0.12.9"
   }
 }
