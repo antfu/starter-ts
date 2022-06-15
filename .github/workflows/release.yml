@@ -1,5 +1,3 @@
-# .github/workflows/release.yml
-
 name: Release
 
 on:
