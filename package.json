@@ -2,7 +2,7 @@
   "name": "pkg-name",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@7.12.0",
+  "packageManager": "pnpm@7.30.0",
   "description": "",
   "author": "Anthony Fu <anthonyfu117@hotmail.com>",
   "license": "MIT",
@@ -47,21 +47,21 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.35.3",
+    "@antfu/eslint-config": "^0.37.0",
     "@antfu/ni": "^0.20.0",
     "@antfu/utils": "^0.7.2",
-    "@types/node": "^18.14.1",
+    "@types/node": "^18.15.5",
     "bumpp": "^9.0.0",
-    "eslint": "^8.34.0",
+    "eslint": "^8.36.0",
     "esno": "^0.16.3",
-    "lint-staged": "^13.1.2",
-    "pnpm": "^7.27.1",
-    "rimraf": "^4.1.2",
+    "lint-staged": "^13.2.0",
+    "pnpm": "^7.30.0",
+    "rimraf": "^4.4.0",
     "simple-git-hooks": "^2.8.1",
-    "typescript": "^4.9.5",
+    "typescript": "^5.0.2",
     "unbuild": "^1.1.2",
-    "vite": "^4.1.4",
-    "vitest": "^0.28.5"
+    "vite": "^4.2.1",
+    "vitest": "^0.29.7"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
