@@ -2,7 +2,7 @@
   "name": "pkg-name",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@8.6.0",
+  "packageManager": "pnpm@8.6.10",
   "description": "",
   "author": "Anthony Fu <anthonyfu117@hotmail.com>",
   "license": "MIT",
@@ -47,21 +47,21 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.39.4",
-    "@antfu/ni": "^0.21.3",
-    "@antfu/utils": "^0.7.4",
-    "@types/node": "^18.16.16",
-    "bumpp": "^9.1.0",
-    "eslint": "^8.41.0",
-    "esno": "^0.16.3",
-    "lint-staged": "^13.2.2",
-    "pnpm": "^8.6.0",
+    "@antfu/eslint-config": "^0.39.8",
+    "@antfu/ni": "^0.21.5",
+    "@antfu/utils": "^0.7.5",
+    "@types/node": "^20.4.5",
+    "bumpp": "^9.1.1",
+    "eslint": "^8.45.0",
+    "esno": "^0.17.0",
+    "lint-staged": "^13.2.3",
+    "pnpm": "^8.6.10",
     "rimraf": "^5.0.1",
-    "simple-git-hooks": "^2.8.1",
-    "typescript": "^5.0.4",
+    "simple-git-hooks": "^2.9.0",
+    "typescript": "^5.1.6",
     "unbuild": "^1.2.1",
-    "vite": "^4.3.9",
-    "vitest": "^0.31.3"
+    "vite": "^4.4.7",
+    "vitest": "^0.33.0"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
