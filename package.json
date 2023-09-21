@@ -2,7 +2,7 @@
   "name": "pkg-placeholder",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@8.7.0",
+  "packageManager": "pnpm@8.7.6",
   "description": "_description_",
   "author": "Anthony Fu <anthonyfu117@hotmail.com>",
   "license": "MIT",
@@ -48,21 +48,22 @@
     "prepare": "simple-git-hooks"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.41.0",
-    "@antfu/ni": "^0.21.6",
+    "@antfu/eslint-config": "^1.0.0-beta.0",
+    "@antfu/ni": "^0.21.8",
     "@antfu/utils": "^0.7.6",
-    "@types/node": "^20.5.7",
+    "@types/node": "^20.6.3",
     "bumpp": "^9.2.0",
-    "eslint": "^8.48.0",
+    "eslint": "^8.49.0",
+    "eslint-define-config": "^1.23.0",
     "esno": "^0.17.0",
     "lint-staged": "^14.0.1",
-    "pnpm": "^8.7.0",
+    "pnpm": "^8.7.6",
     "rimraf": "^5.0.1",
     "simple-git-hooks": "^2.9.0",
     "typescript": "^5.2.2",
     "unbuild": "^2.0.0",
     "vite": "^4.4.9",
-    "vitest": "^0.34.3"
+    "vitest": "^0.34.5"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
