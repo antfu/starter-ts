@@ -2,12 +2,9 @@
   "compilerOptions": {
     "target": "ESNext",
     "lib": ["ESNext"],
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "resolveJsonModule": true,
+    "module": "Preserve",
     "strict": true,
     "strictNullChecks": true,
-    "esModuleInterop": true,
     "skipDefaultLibCheck": true,
     "skipLibCheck": true
   }
