@@ -4,15 +4,14 @@
   "version": "0.0.0",
   "packageManager": "pnpm@9.1.0",
   "description": "_description_",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "author": "_Kerman <kermanx@qq.com>",
   "license": "MIT",
-  "funding": "https://github.com/sponsors/antfu",
-  "homepage": "https://github.com/antfu/pkg-placeholder#readme",
+  "homepage": "https://github.com/KermanX/pkg-placeholder#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antfu/pkg-placeholder.git"
+    "url": "git+https://github.com/KermanX/pkg-placeholder.git"
   },
-  "bugs": "https://github.com/antfu/pkg-placeholder/issues",
+  "bugs": "https://github.com/KermanX/pkg-placeholder/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {
