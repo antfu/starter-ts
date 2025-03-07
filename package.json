@@ -2,7 +2,7 @@
   "name": "pkg-placeholder",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@9.0.2",
+  "packageManager": "pnpm@10.6.1",
   "description": "_description_",
   "author": "Anthony Fu <anthonyfu117@hotmail.com>",
   "license": "MIT",
@@ -16,54 +16,44 @@
   "keywords": [],
   "sideEffects": false,
   "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
-    },
+    ".": "./dist/index.mjs",
     "./package.json": "./package.json"
   },
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "typesVersions": {
-    "*": {
-      "*": [
-        "./dist/*",
-        "./dist/index.d.ts"
-      ]
-    }
-  },
+  "types": "./dist/index.d.mts",
   "files": [
     "dist"
   ],
   "scripts": {
     "build": "unbuild",
     "dev": "unbuild --stub",
-    "lint": "eslint .",
+    "lint": "eslint",
     "prepublishOnly": "nr build",
-    "release": "bumpp && npm publish",
-    "start": "esno src/index.ts",
+    "release": "bumpp && pnpm publish",
+    "start": "tsx src/index.ts",
     "test": "vitest",
     "typecheck": "tsc --noEmit",
     "prepare": "simple-git-hooks"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.14.0",
-    "@antfu/ni": "^0.21.12",
-    "@antfu/utils": "^0.7.7",
-    "@types/node": "^20.12.7",
-    "bumpp": "^9.4.0",
-    "eslint": "^9.0.0",
-    "esno": "^4.7.0",
-    "lint-staged": "^15.2.2",
-    "pnpm": "^9.0.2",
-    "rimraf": "^5.0.5",
-    "simple-git-hooks": "^2.11.1",
-    "typescript": "^5.4.5",
-    "unbuild": "^2.0.0",
-    "vite": "^5.2.9",
-    "vitest": "^1.5.0"
+    "@antfu/eslint-config": "catalog:cli",
+    "@antfu/ni": "catalog:cli",
+    "@antfu/utils": "catalog:utils",
+    "@types/js-yaml": "catalog:testing",
+    "@types/node": "catalog:types",
+    "bumpp": "catalog:cli",
+    "eslint": "catalog:cli",
+    "js-yaml": "catalog:testing",
+    "lint-staged": "catalog:cli",
+    "simple-git-hooks": "catalog:cli",
+    "tinyexec": "catalog:utils",
+    "tsx": "catalog:cli",
+    "typescript": "catalog:cli",
+    "unbuild": "catalog:cli",
+    "vite": "catalog:cli",
+    "vitest": "catalog:testing",
+    "vitest-package-exports": "catalog:testing"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
