@@ -1,7 +1,7 @@
-import yaml from 'js-yaml'
 import { x } from 'tinyexec'
 import { describe, expect, it } from 'vitest'
 import { getPackageExportsManifest } from 'vitest-package-exports'
+import yaml from 'yaml'
 
 // TODO: remove this when you are ready for the first release
 const IS_READY = false
@@ -19,7 +19,7 @@ describe.runIf(IS_READY)('exports-snapshot', async () => {
         importMode: 'src',
         cwd: pkg.path,
       })
-      await expect(yaml.dump(manifest.exports, { sortKeys: (a, b) => a.localeCompare(b) }))
+      await expect(yaml.stringify(manifest.exports))
         .toMatchFileSnapshot(`./exports/${pkg.name}.yaml`)
     })
   }
