@@ -40,9 +40,12 @@
     "@antfu/eslint-config": "catalog:cli",
     "@antfu/ni": "catalog:cli",
     "@antfu/utils": "catalog:inlined",
+    "@eslint/js": "catalog:cli",
     "@types/node": "catalog:types",
     "bumpp": "catalog:cli",
     "eslint": "catalog:cli",
+    "eslint-plugin-pnpm": "catalog:cli",
+    "jsonc-eslint-parser": "catalog:cli",
     "lint-staged": "catalog:cli",
     "simple-git-hooks": "catalog:cli",
     "tinyexec": "catalog:testing",
@@ -52,7 +55,8 @@
     "vite": "catalog:cli",
     "vitest": "catalog:testing",
     "vitest-package-exports": "catalog:testing",
-    "yaml": "catalog:testing"
+    "yaml": "catalog:testing",
+    "yaml-eslint-parser": "catalog:cli"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm i --frozen-lockfile --ignore-scripts --offline && npx lint-staged"
