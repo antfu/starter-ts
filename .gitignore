@@ -1,5 +1,6 @@
 .cache
 .DS_Store
+.githooks
 .idea
 *.log
 *.tgz
@@ -8,4 +9,5 @@ dist
 lib-cov
 logs
 node_modules
+skills/npm-*
 temp

@@ -2,7 +2,7 @@
   "name": "pkg-placeholder",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@10.33.1",
+  "packageManager": "pnpm@11.1.3",
   "description": "_description_",
   "author": "Anthony Fu <anthonyfu117@hotmail.com>",
   "license": "MIT",
@@ -32,7 +32,7 @@
     "start": "tsx src/index.ts",
     "test": "pnpm run build && vitest",
     "typecheck": "tsc",
-    "prepare": "simple-git-hooks"
+    "prepare": "git config core.hooksPath .githooks && simple-git-hooks && skills-npm"
   },
   "devDependencies": {
     "@antfu/eslint-config": "catalog:cli",
@@ -41,9 +41,10 @@
     "@types/node": "catalog:types",
     "bumpp": "catalog:cli",
     "eslint": "catalog:cli",
-    "lint-staged": "catalog:cli",
+    "nano-staged": "catalog:cli",
     "publint": "catalog:cli",
     "simple-git-hooks": "catalog:cli",
+    "skills-npm": "catalog:cli",
     "tsdown": "catalog:cli",
     "tsdown-stale-guard": "catalog:testing",
     "tsnapi": "catalog:testing",
@@ -53,9 +54,9 @@
     "vitest": "catalog:testing"
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpm i --frozen-lockfile --ignore-scripts --offline && pnpm run build && npx lint-staged"
+    "pre-commit": "pnpm i --frozen-lockfile --ignore-scripts --offline && pnpm run build && npx nano-staged"
   },
-  "lint-staged": {
+  "nano-staged": {
     "*": "eslint --fix"
   }
 }
