@@ -2,7 +2,7 @@
   "name": "pkg-placeholder",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@12.5.1",
+  "packageManager": "pnpm@12.8.1",
   "description": "_description_",
   "author": "Anthony Fu <anthonyfu117@hotmail.com>",
   "license": "MIT",
@@ -58,6 +58,7 @@
     "publint": "catalog:cli",
     "simple-git-hooks": "catalog:cli",
     "skills-npm": "catalog:cli",
+    "taze": "catalog:cli",
     "tsdown": "catalog:cli",
     "tsdown-stale-guard": "catalog:testing",
     "tsnapi": "catalog:testing",
@@ -67,9 +68,9 @@
     "vitest": "catalog:testing"
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpm i --frozen-lockfile --ignore-scripts --offline && pnpm run build && npx nano-staged"
+    "pre-commit": "pnpm i --frozen-lockfile --ignore-scripts --offline && pnpm run build && pnpx nano-staged"
   },
   "nano-staged": {
-    "*": "eslint --fix"
+    "*": "eslint --fix --no-warn-ignored"
   }
 }
