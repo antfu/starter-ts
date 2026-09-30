@@ -11,3 +11,4 @@ logs
 node_modules
 skills/npm-*
 temp
+.eslintcache
