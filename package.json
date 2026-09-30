@@ -52,6 +52,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "catalog:cli",
     "@antfu/ni": "catalog:cli",
+    "@antfu/skills": "catalog:agentic",
     "@antfu/utils": "catalog:inlined",
     "@types/node": "catalog:types",
     "bumpp": "catalog:cli",
@@ -62,7 +63,7 @@
     "nano-staged": "catalog:cli",
     "publint": "catalog:cli",
     "simple-git-hooks": "catalog:cli",
-    "skills-npm": "catalog:cli",
+    "skills-npm": "catalog:agentic",
     "taze": "catalog:cli",
     "tsdown": "catalog:cli",
     "tsdown-stale-guard": "catalog:testing",
@@ -76,6 +77,6 @@
     "pre-commit": "pnpm i --frozen-lockfile --ignore-scripts --offline && pnpm run ci && pnpx nano-staged"
   },
   "nano-staged": {
-    "*": "eslint --fix --no-warn-ignored"
+    "*.{js,ts,tsx,json,css,md,yaml,vue}": "eslint --fix --no-warn-ignored"
   }
 }

@@ -1,6 +1,10 @@
 ignoreWorkspaceRootCheck: true
 catalogMode: prefer
+
 minimumReleaseAgeExcludePrune: true
+minimumReleaseAgeExclude:
+  - '@antfu/skills@0.1.0'
+
 trustPolicy: no-downgrade
 
 update:
@@ -20,6 +24,9 @@ allowBuilds:
   simple-git-hooks: true
 
 catalogs:
+  agentic:
+    '@antfu/skills': ^0.1.0
+    skills-npm: ^4.0.0
   cli:
     '@antfu/eslint-config': ^9.5.1
     '@antfu/ni': ^30.6.0
@@ -31,7 +38,6 @@ catalogs:
     nano-staged: ^1.0.2
     publint: ^0.3.24
     simple-git-hooks: ^2.14.0
-    skills-npm: ^4.0.0
     taze: ^21.2.0
     tsdown: ^0.23.0
     tsx: ^4.23.15
