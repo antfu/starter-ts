@@ -22,6 +22,13 @@
       "computedHash": "1838f2c70d58f145dd7779358618ca7ed2967085ef7a8776b40bfc7197cf11a2",
       "via": "@antfu/skills"
     },
+    "antfu-issue-triage": {
+      "source": "antfu/skills",
+      "sourceType": "github",
+      "skillPath": "skills/antfu-issue-triage/SKILL.md",
+      "computedHash": "a6604cd24a1e341d49b783145b82f847f8b5c534b6be719066ddee3a74c9ff87",
+      "via": "@antfu/skills"
+    },
     "code-review": {
       "source": "mattpocock/skills",
       "sourceType": "github",
