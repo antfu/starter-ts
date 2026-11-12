@@ -2,7 +2,7 @@
   "name": "pkg-placeholder",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@12.15.0",
+  "packageManager": "pnpm@12.18.0",
   "description": "_description_",
   "author": "Anthony Fu <anthonyfu117@hotmail.com>",
   "license": "MIT",
@@ -34,20 +34,7 @@
     "test": "pnpm run build && vitest",
     "typecheck": "tsc",
     "ci": "pnpm run lint && pnpm run typecheck && pnpm run knip && pnpm run test --run",
-    "prepare": "git config core.hooksPath .githooks && simple-git-hooks && skills experimental_sync -y"
-  },
-  "scripts-info": {
-    "build": "Build the library for publishing",
-    "dev": "Rebuild on change during development",
-    "knip": "Find unused files, exports and dependencies",
-    "lint": "Check for code style issues",
-    "prepack": "Build before publishing",
-    "release": "Bump version and publish a release",
-    "start": "Run the entry file",
-    "test": "Run the test suite",
-    "typecheck": "Check types",
-    "ci": "Run the full continuous integration pipeline",
-    "prepare": "Set up git hooks and skills"
+    "prepare": "git config core.hooksPath .githooks && simple-git-hooks && skills sync -y"
   },
   "devDependencies": {
     "@antfu/eslint-config": "catalog:cli",
