@@ -5,6 +5,7 @@ minimumReleaseAgeExcludePrune: true
 minimumReleaseAgeExclude:
   - knip@6.45.1
   - vite@8.3.8
+  - skills@1.9.0
 
 trustPolicy: no-downgrade
 
@@ -27,12 +28,12 @@ allowBuilds:
 catalogs:
   agentic:
     '@antfu/skills': ^0.1.3
-    skills: ^1.8.1
+    skills: ^1.9.0
   cli:
     '@antfu/eslint-config': ^10.0.0
     '@antfu/ni': ^30.6.0
     bumpp: ^12.3.0
-    eslint: ^10.14.0
+    eslint: ^10.15.0
     eslint-plugin-slop: ^0.1.3
     eslint-plugin-sonarjs: ^4.2.2
     knip: ^6.45.1
